@@ -14,13 +14,11 @@ PE = "1"
 SRC_URI = "http://downloads.yoctoproject.org/releases/${BPN}/${BPN}-${PV}.tar.gz \
            file://opkg.conf \
            file://0001-opkg_conf-create-opkg.lock-in-run-instead-of-var-run.patch \
-           file://0001-opkg_install_pkg-allow-upgrades-between-packages-wit.patch \
-           file://0002-libsolv_solver_execute_transaction-treat-obsolete-op.patch \
            file://run-ptest \
 "
 
-SRC_URI[md5sum] = "bd13e5dfc1c2536f0c7b2e15f795278e"
-SRC_URI[sha256sum] = "86887852c43457edfff9d8b6d9520f3f1cdd55f25eb600a6eb31e1c4e151e106"
+SRC_URI[md5sum] = "5dc41ad37d88803b5e0f456a9c5a0811"
+SRC_URI[sha256sum] = "a1214a75fa34fb9228db8da47308e0e711b1c93fd8938cf164c10fd28eb50f1e"
 
 # This needs to be before ptest inherit, otherwise all ptest files end packaged
 # in libopkg package if OPKGLIBDIR == libdir, because default
